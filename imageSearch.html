@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Meta info for charset and responsive design -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Single Image Search</title>    
+    </head>
+    <body>
+        <header>
+            <h1>Image Search</h1>
+        </header>
+        <main>
+            <!-- Form for image search-->
+            <form id="imgSearchForm">
+                <label>Input Image You Want To Search For: </label>
+                <!-- Input field for search, requires input text to search -->
+                <input type="text" id="imgInput" name="imgInput" required><br>
+                <button type="submit">Search</button>
+            </form>
+            <!-- Section for displaying image and output text -->
+            <section id="imgDisplay">
+                <img id="imgOutput">
+                <p id="textResp"></p>
+            </section>
+            <!-- Prominent link to Pexels for guideline purposes -->
+            <a href="https://www.pexels.com">Photos provided by Pexels</a>
+        </main>
+
+        <!-- Use external javascipt file -->
+        <script type="text/javascript" src="imageSearch.js" ></script>
+    </body>
+</html>
