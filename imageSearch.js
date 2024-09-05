@@ -19,6 +19,15 @@ function respond(src,alt,photographer){
     textResp.innerHTML = `${alt} by ${photographer}`;
 };
 
+// EventListener for on key presses
+form.addEventListener("keypress",function(event){
+    // If the Enter key is pressed
+    if(event.key === "Enter") {
+        // Trigger the button with a click
+        document.getElementById("submit").click();
+    }
+});
+
 // EventListener for submit button to search for a single random image
 form.addEventListener("submit",function(event){
     // Disable the refresh of pressing the submit button functionality

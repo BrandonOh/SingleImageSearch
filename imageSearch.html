@@ -4,30 +4,43 @@
         <!-- Meta info for charset and responsive design -->
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Single Image Search</title>    
+        <title>Single Image Search</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">    
     </head>
-    <body>
+    <body class="bg-secondary">
         <header>
-            <h1>Image Search</h1>
+            <div class="container text-center">
+                <h1>Image Search</h1>
+            </div>
         </header>
         <main>
-            <!-- Form for image search-->
-            <form id="imgSearchForm">
-                <label>Input Image You Want To Search For: </label>
-                <!-- Input field for search, requires input text to search -->
-                <input type="text" id="imgInput" name="imgInput" required><br>
-                <button type="submit">Search</button>
-            </form>
-            <!-- Section for displaying image and output text -->
-            <section id="imgDisplay">
-                <img id="imgOutput">
-                <p id="textResp"></p>
-            </section>
-            <!-- Prominent link to Pexels for guideline purposes -->
-            <a href="https://www.pexels.com">Photos provided by Pexels</a>
+            <div class="container text-center">
+                <div class="row">
+                    <!-- Form for image search-->
+                    <form id="imgSearchForm">
+                        <label>Input Image You Want To Search For: </label>
+                        <!-- Input field for search, requires input text to search -->
+                        <input type="text" id="imgInput" name="imgInput" required><br>
+                        <button type="submit">Search</button>
+                    </form>
+                </div>
+                <div class="row">
+                    <!-- Section for displaying image and output text -->
+                    <section id="imgDisplay">
+                        <img id="imgOutput">
+                        <p id="textResp"></p>
+                    </section>
+                </div>
+            </div>
         </main>
-
-        <!-- Use external javascipt file -->
-        <script type="text/javascript" src="imageSearch.js" ></script>
+        <footer>
+            <div class="container text-center">
+                <!-- Prominent link to Pexels for guideline purposes -->
+                <a href="https://www.pexels.com">Photos provided by Pexels</a>
+            </div>
+        </footer>
+        <!-- Use external javascript file -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="imageSearch.js"></script>
     </body>
 </html>
